@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ParallelTesting">
+
+ <listeners>
+ <listener class-name="com.orangeHRM.listners.SuiteListener"></listener>
+ </listeners>
+ 
+	<test thread-count="2" name="ParameterTestExample-Sonali">	
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.flipkart.com"></parameter>
+	<classes>	
+	<class name="com.OragneHRM.stepDefination.ParamterFromXMLFile"></class>
+	</classes>
+	</test> <!-- Test -->
+	
+	<!-- <test thread-count="2" name="ParameterTestExample-Supriya">	
+	<parameter name="browserName" value="edge"></parameter>
+	<parameter name="url" value="https://www.amazon.com"></parameter>
+	<classes>	
+	<class name="com.OragneHRM.stepDefination.ParamterFromXMLFile"></class>
+	</classes>
+	</test>	 -->
+</suite> <!-- Suite -->

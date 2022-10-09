@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNGFramework">
+	<test thread-count="5" name="OrangeHRMLogin">
+	
+	<classes>
+	<class name="com.orangeHRM.automationUtitlites.BaseClass"></class>
+	<class name="com.OragneHRM.stepDefination.CommonMethdos"></class>
+	<class name="com.OragneHRM.stepDefination.LoginPageSD">
+	<!-- <methods>
+   	<include name="getTitle()"></include>
+   		<include name="verifyPage()"></include>
+   	<exclude name ="getCurrentUrl()">  </exclude> Method will get ignore
+	</methods> -->
+	</class>
+	</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
