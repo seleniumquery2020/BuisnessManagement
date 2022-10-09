@@ -14,6 +14,7 @@ public class SuiteListener implements ISuiteListener {
 	ExtentTest extentTest;
     ExtentReports extentReports;
     ExtentHtmlReporter extentHtmlReporter;
+    
 	@Override
 	public void onStart(ISuite suite) {
 		System.out.println("=========="+suite.getName() + " execution is started"+"==========");
@@ -24,7 +25,7 @@ public class SuiteListener implements ISuiteListener {
 
 	@Override
 	public void onFinish(ISuite suite) {
-		
+		extentReports.flush();
 		System.out.println("=========="+suite.getName() + " execution is finished"+"==========");
 	}
 
